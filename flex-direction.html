@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas Flex-direction</title>
+    <style>
+        .flex-contaner{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            
+        }
+        .flex-item{
+            background-color: blue;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            color: wheat;
+            text-align: center;
+            margin: 5px;
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        .row-reverse li{
+            background-color: red;
+        }
+        .colum{
+            float: left;
+            flex-direction: column;
+        }
+
+        .colum li{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p>Define a direção que os elementos filhos do container terá, horizontal(em linha) ou vertical(em coluna)</p>
+    <ul class="flex-contaner">
+        <li class="flex-item">Item 1</li>
+        <li class="flex-item">Item 2</li>
+        <li class="flex-item">Item 3</li>
+        <li class="flex-item">Item 4</li>
+        <li class="flex-item">Item 5</li>
+    </ul>
+    
+    <ul class="flex-contaner row-reverse">
+        <li class="flex-item">Item 1</li>
+        <li class="flex-item">Item 2</li>
+        <li class="flex-item">Item 3</li>
+        <li class="flex-item">Item 4</li>
+        <li class="flex-item">Item 5</li>
+    </ul>
+
+    <ul class="flex-contaner colum">
+        <li class="flex-item">Item 1</li>
+        <li class="flex-item">Item 2</li>
+        <li class="flex-item">Item 3</li>
+        <li class="flex-item">Item 4</li>
+        <li class="flex-item">Item 5</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap</title>
+    <style>
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid red;
+            max-width: 300px;
+        }
+        .flex-item{
+            font-size: 20px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+            color: azure;
+            
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .green{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Permite ou não a quebra de linha dos elementos filhos do container.</p>
+   <h1> no wrap</h1>
+
+   <div class="flex-container nowrap">
+        <div class="flex-item blue">Item1</div>
+        <div class="flex-item orange">Item2</div>
+        <div class="flex-item green">Item3</div>
+        <div class="flex-item orange">Item4</div>    
+   </div>
+   
+   <h1> wrap</h1>
+
+   <div class="flex-container wrap">
+        <div class="flex-item blue">Item1</div>
+        <div class="flex-item orange">Item2</div>
+        <div class="flex-item green">Item3</div>
+        <div class="flex-item orange">Item4</div>    
+    </div>
+
+</body>
+</html>
